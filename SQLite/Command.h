@@ -32,50 +32,64 @@ public:
 			temp[i+1] = '\0';
 			if (strcmp(temp, "CREATE TABLE")==0) // if the arrays are identical
 			{
-				if (temp[i + 1] == ' ') {
+				if (temp[i + 1] == ' ' || fullCommand[i + 1] == '\0') {
 					delete[] temp;
 					return CREATE_TABLE;
 				}
 				else {
 					cout << "Incorrect command. Try only CREATE TABLE" << endl;
+					delete[] temp;
+					return 0;
 				}
 				
 			}
 			if (strcmp(temp, "CREATE INDEX") == 0)
 			{
-				if (temp[i + 1] == ' ') {
+				if (temp[i + 1] == ' ' || fullCommand[i + 1] == '\0') {
 					delete[] temp;
 					return CREATE_INDEX;
 				}
 				else {
 					cout << "Incorrect command. Try only CREATE INDEX" << endl;
+					delete[] temp;
+					return 0;
+
 				}
 			}
 			if (strcmp(temp, "DROP TABLE") == 0)
 			{
-				if (temp[i + 1] == ' ') {
+				if (temp[i + 1] == ' ' || fullCommand[i + 1] == '\0') {
 					delete[] temp;
 					return DROP_TABLE;
 				}
 				else {
 					cout << "Incorrect command. Try only DROP TABLE" << endl;
+					delete[] temp;
+					return 0;
 				}
 			}
 			if (strcmp(temp, "DROP INDEX") == 0)
 			{
-				if (temp[i + 1] == ' ') {
+				if (temp[i + 1] == ' ' || fullCommand[i + 1] == '\0') {
 					delete[] temp;
 					return DROP_INDEX;
 				}
 				else {
 					cout << "Incorrect command. Try only DROP INDEX" << endl;
+					delete[] temp;
+					return 0;
 				}
 			}
 			if (strcmp(temp, "DISPLAY TABLE") == 0)
 			{
-				if (temp[i + 1] == ' ') {
+				if (temp[i + 1] == ' ' || fullCommand[i + 1] == '\0') {
 					delete[] temp;
 					return DISPLAY_TABLE;
+				}
+				else {
+					cout << "Incorrect command. Try only DISPLAY TABLE" << endl;
+					delete[] temp;
+					return 0;
 				}
 			}
 
