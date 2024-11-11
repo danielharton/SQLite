@@ -32,7 +32,7 @@ public:
 			temp[i+1] = '\0';
 			if (strcmp(temp, "CREATE TABLE")==0) // if the arrays are identical
 			{
-				if (temp[i + 1] == ' ' || fullCommand[i + 1] == '\0') {
+				if (fullCommand[i + 1] == '\0' || fullCommand[i+1]==' ') {
 					delete[] temp;
 					return CREATE_TABLE;
 				}
@@ -45,7 +45,7 @@ public:
 			}
 			if (strcmp(temp, "CREATE INDEX") == 0)
 			{
-				if (temp[i + 1] == ' ' || fullCommand[i + 1] == '\0') {
+				if (fullCommand[i + 1] == '\0' || fullCommand[i + 1] == ' ') {
 					delete[] temp;
 					return CREATE_INDEX;
 				}
@@ -58,7 +58,7 @@ public:
 			}
 			if (strcmp(temp, "DROP TABLE") == 0)
 			{
-				if (temp[i + 1] == ' ' || fullCommand[i + 1] == '\0') {
+				if (fullCommand[i + 1] == '\0' || fullCommand[i + 1] == ' ') {
 					delete[] temp;
 					return DROP_TABLE;
 				}
@@ -70,7 +70,7 @@ public:
 			}
 			if (strcmp(temp, "DROP INDEX") == 0)
 			{
-				if (temp[i + 1] == ' ' || fullCommand[i + 1] == '\0') {
+				if (fullCommand[i + 1] == '\0' || fullCommand[i + 1] == ' ') {
 					delete[] temp;
 					return DROP_INDEX;
 				}
@@ -82,7 +82,7 @@ public:
 			}
 			if (strcmp(temp, "DISPLAY TABLE") == 0)
 			{
-				if (temp[i + 1] == ' ' || fullCommand[i + 1] == '\0') {
+				if (fullCommand[i + 1] == '\0' || fullCommand[i + 1] == ' ') {
 					delete[] temp;
 					return DISPLAY_TABLE;
 				}
