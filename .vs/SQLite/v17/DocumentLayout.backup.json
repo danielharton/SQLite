@@ -32,10 +32,11 @@
               "RelativeDocumentMoniker": "SQLite\\main.cpp",
               "ToolTip": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\main.cpp",
               "RelativeToolTip": "SQLite\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-10T15:19:41.241Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -67,9 +68,9 @@
               "Title": "Command.h",
               "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\Command.h",
               "RelativeDocumentMoniker": "SQLite\\Command.h",
-              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\Command.h",
-              "RelativeToolTip": "SQLite\\Command.h",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAAALUAAAACAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\Command.h*",
+              "RelativeToolTip": "SQLite\\Command.h*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-10T15:33:00.589Z",
               "EditorCaption": ""
@@ -84,7 +85,8 @@
               "RelativeToolTip": "SQLite\\dbfile.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-11-10T17:44:08.975Z"
+              "WhenOpened": "2024-11-10T17:44:08.975Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -20,19 +20,26 @@ enum crudCmds {
 class Command {
 private:
 	char* comm;
+
+	static unsigned int detectedCommand;
+	static unsigned int currentPosition;
 	
 public:
-
+	static int getPos() {
+		return currentPosition;
+	}
 	int getCmd(const char* fullCommand) {
 		char* temp=new char[100];
 		temp[0] = '\0';
 
 		for (unsigned int i = 0; i < strlen(fullCommand); i++) {
+			Command::currentPosition = i;
 			temp[i] = fullCommand[i];
 			temp[i+1] = '\0';
 			if (strcmp(temp, "CREATE TABLE")==0) // if the arrays are identical
 			{
 				if (fullCommand[i + 1] == '\0' || fullCommand[i+1]==' ') {
+					Command::detectedCommand = CREATE_TABLE;
 					delete[] temp;
 					return CREATE_TABLE;
 				}
@@ -46,6 +53,7 @@ public:
 			if (strcmp(temp, "CREATE INDEX") == 0)
 			{
 				if (fullCommand[i + 1] == '\0' || fullCommand[i + 1] == ' ') {
+					Command::detectedCommand = CREATE_INDEX;
 					delete[] temp;
 					return CREATE_INDEX;
 				}
@@ -59,6 +67,7 @@ public:
 			if (strcmp(temp, "DROP TABLE") == 0)
 			{
 				if (fullCommand[i + 1] == '\0' || fullCommand[i + 1] == ' ') {
+					Command::detectedCommand = DROP_TABLE;
 					delete[] temp;
 					return DROP_TABLE;
 				}
@@ -71,6 +80,7 @@ public:
 			if (strcmp(temp, "DROP INDEX") == 0)
 			{
 				if (fullCommand[i + 1] == '\0' || fullCommand[i + 1] == ' ') {
+					Command::detectedCommand = DROP_INDEX;
 					delete[] temp;
 					return DROP_INDEX;
 				}
@@ -83,6 +93,7 @@ public:
 			if (strcmp(temp, "DISPLAY TABLE") == 0)
 			{
 				if (fullCommand[i + 1] == '\0' || fullCommand[i + 1] == ' ') {
+					Command::detectedCommand = DISPLAY_TABLE;
 					delete[] temp;
 					return DISPLAY_TABLE;
 				}
@@ -100,13 +111,27 @@ public:
 		delete[] temp;
 		return 0;
 	}
-
+	static void continueDetection(const char* fullCommand) {
+		char* temp = new char[100];
+		temp[0] = '\0';
+		if (fullCommand[Command::currentPosition] == ' ') {
+			Command::currentPosition++;
+		}
+		for (unsigned int i = Command::currentPosition; i < strlen(fullCommand); i++) {
+			
+			temp[i] = fullCommand[i];
+			temp[i + 1] = '\0';
+			
+		}
+	}
 
 	~Command(){
 		delete[] this->comm;
 	}
 
 };
+ unsigned int Command::detectedCommand=0;
+unsigned int Command::currentPosition=0;
 class Table {
 private:
 	char* tableName;
@@ -244,7 +269,7 @@ public:
 };
 
 
-Command cmd;
+
 
 
 
