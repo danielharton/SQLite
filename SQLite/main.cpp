@@ -6,16 +6,17 @@
 
 using namespace std;
 
+
+
 ifstream fin("dbfile.txt");
-ofstream fout("dbfile.txt");
+ofstream fout("dbfile.txt", std::ios::out); // this creates a new empty file so we need a different way of doing it
 
 int main() {
-	cout << "test";
-	fout << "test";
+	
+	char* myCommand=new char[100];
+	cin.getline(myCommand, 100);
 
-
-
-
+	cout<<cmd.getCmd(myCommand);
 
 	fin.close();
 	fout.close();

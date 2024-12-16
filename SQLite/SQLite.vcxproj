@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h" />
+    <ClInclude Include="sql.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="dbfile.txt" />
