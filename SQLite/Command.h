@@ -102,8 +102,47 @@ public:
 	}
 
 
-	
+	~Command(){
+		delete[] this->comm;
+	}
 
+};
+class Table {
+private:
+	char* tableName;
+
+	Column** colArr;
+	unsigned int nrCol;
+
+public:
+	char* getTableName() {
+		char* tmp = new char[strlen(this->tableName) + 1];
+		strcpy_s(tmp, strlen(this->tableName) + 1, this->tableName);
+		return tmp;
+	}
+	void addNewCol(Column* _column) {
+		if (_column == nullptr) {
+			throw "addNewCol has nullptr param. Add a column that is not nullptr";
+		}
+		else {
+			colArr[nrCol] = new Column[sizeof _column];
+			colArr[nrCol] = _column;
+
+			nrCol++;
+		}
+	}
+	void setTableName(const char* tableName) {
+		if (tableName == nullptr) {
+			throw "The param of setTableName method can't be nullptr";
+		}
+		this->tableName = new char[strlen(tableName) + 1];
+		strcpy_s(this->tableName, strlen(tableName) + 1, tableName);
+	}
+
+	~Table() {
+		delete[] this->tableName;
+		delete[] this->colArr;
+	}
 };
 class Column {
 
@@ -180,7 +219,9 @@ public:
 		}
 		this->colSize = colSize;
 	}
-
+	~Column() {
+		delete[] this->colName, this->colType, this->defValue, this->colType;
+	}
 };
 
 
