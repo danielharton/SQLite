@@ -201,7 +201,7 @@ public:
 		strcpy_s(tmp, strlen(tmp), this->defValue);
 		return tmp;
 	}
-	void fillColumn(const char* tableName, const char* colName, const int& colSize, const char* colType, char* defValue) {
+	void fillColumn(const char* tableName, const char* colName, const int& colSize, const char* colType, const char* defValue) {
 		this->setColName(colName);
 		this->setTableName(tableName);
 		this->setColType(colType);
@@ -213,7 +213,7 @@ public:
 	unsigned int getColSize() {
 		return this->colSize;
 	}
-	void setColSize(int colSize) {
+	void setColSize(const int& colSize) {
 		if (colSize < 0) {
 			throw "The param of setColSize can't accept negative value. Column size must be positive";
 		}
@@ -223,7 +223,25 @@ public:
 		delete[] this->colName, this->colType, this->defValue, this->colType;
 	}
 };
-
+class dbClass {
+private:
+	Table** t;
+	unsigned int nrTables;
+public:
+	void addNewTable( Table* _t) {
+		if (_t == nullptr) {
+			throw "addNewTable doesn't accept nullptr";
+		}
+		for (int i = 0; i < this->nrTables; i++) {
+			if (_t[i].getTableName() == t[i]->getTableName()) {
+				throw "A table with the same name exists";
+			}
+		}
+		t[nrTables] = new Table[sizeof _t];
+		t[nrTables] = _t;
+		nrTables++;
+	}
+};
 
 
 Command cmd;
