@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|solutionrelative:SQLite\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\Command.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|solutionrelative:SQLite\\Command.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|solutionrelative:SQLite\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\dbfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|solutionrelative:SQLite\\dbfile.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\command.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|solutionrelative:SQLite\\command.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\sql.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{777B009D-0ECB-4146-9066-3222B7B88F5F}|SQLite\\SQLite.vcxproj|solutionrelative:SQLite\\sql.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\Main.cpp",
               "RelativeDocumentMoniker": "SQLite\\Main.cpp",
               "ToolTip": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\Main.cpp",
               "RelativeToolTip": "SQLite\\Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-10T15:19:41.241Z",
               "IsPinned": true,
@@ -60,26 +64,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Command.h",
               "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\Command.h",
               "RelativeDocumentMoniker": "SQLite\\Command.h",
               "ToolTip": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\Command.h",
               "RelativeToolTip": "SQLite\\Command.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAIwGQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-10T15:33:00.589Z",
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "sql.h",
+              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\sql.h",
+              "RelativeDocumentMoniker": "SQLite\\sql.h",
+              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\sql.h",
+              "RelativeToolTip": "SQLite\\sql.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-18T08:49:27.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "dbfile.txt",
               "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\dbfile.txt",
               "RelativeDocumentMoniker": "SQLite\\dbfile.txt",
               "ToolTip": "C:\\Users\\Daniel\\OneDrive\\SCHOOL\\facultate\\infoeco\\anul2\\sem1\\POO\\optional project\\sqlite\\SQLite\\dbfile.txt",
               "RelativeToolTip": "SQLite\\dbfile.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-11-10T17:44:08.975Z",
               "EditorCaption": ""
